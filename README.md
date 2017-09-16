@@ -13,6 +13,7 @@ Dependencies:
 
 - `python3`
 - `java8`
+- [`discodop`](https://github.com/andreasvc/disco-dop/)
 
 Data required (and not included):
 
