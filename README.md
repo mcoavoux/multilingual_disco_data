@@ -12,7 +12,7 @@ Process three corpora:
 Dependencies:
 
 - `python3`
-- `java8`
+- `java` (>= 1.8)
 - [`discodop`](https://github.com/andreasvc/disco-dop/)
 
 Data required (and not included):
