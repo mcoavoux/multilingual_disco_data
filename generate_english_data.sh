@@ -57,11 +57,10 @@ cat $WSJDIR/0[2-9]/*.mrg $WSJDIR/1*/*.mrg $WSJDIR/2[0-1]/*.mrg > ${tmp}/train_pt
 cat $WSJDIR/22/*.mrg > ${tmp}/dev_ptb.mrg
 cat $WSJDIR/23/*.mrg > ${tmp}/test_ptb.mrg
 
-java8=/home/mcoavoux/installation/jdk8/build/linux-x86_64-normal-server-release/jdk/bin/java
 
 for corpus in train dev test
 do
-    ${java8} -cp stanford-parser.jar -Xmx2g edu.stanford.nlp.trees.GrammaticalStructure -basic -treeFile ${tmp}/${corpus}_ptb.mrg -conllx -language en-sd > ${target}/${corpus}.conll
+    java -cp stanford-parser.jar -Xmx2g edu.stanford.nlp.trees.GrammaticalStructure -basic -treeFile ${tmp}/${corpus}_ptb.mrg -conllx -language en-sd > ${target}/${corpus}.conll
     #java -cp stanford-parser.jar -Xmx2g edu.stanford.nlp.trees.GrammaticalStructure -basic -treeFile ${tmp}/${corpus}_ptb.mrg -conllx -language en-sd > ${target}/${corpus}.conll
     #java -jar pennconverter.jar -f ${tmp}/${corpus}_ptb.mrg -t ${target_lth}/${corpus}.conll -splitSlash=false
 done
