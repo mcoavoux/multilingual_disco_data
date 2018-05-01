@@ -14,6 +14,7 @@ Dependencies:
 - `python3`
 - `java` (>= 1.8)
 - [`discodop`](https://github.com/andreasvc/disco-dop/)
+- [`treetools`](https://github.com/wmaier/treetools)
 
 Data required (and not included):
 
