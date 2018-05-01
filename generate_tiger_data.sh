@@ -22,7 +22,7 @@ then
 fi
 
 tiger=data/tiger_spmrl
-mkdir ${tiger}
+mkdir -p ${tiger}
 
 for corpus in train dev test
 do
