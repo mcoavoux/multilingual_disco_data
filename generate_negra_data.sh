@@ -21,6 +21,9 @@ then
     wget https://nats-www.informatik.uni-hamburg.de/pub/CDG/DownloadPage/cdg-2006-06-21.tar.gz
     tar xvzf cdg-2006-06-21.tar.gz --directory=${depsyroot}
     rm cdg-2006-06-21.tar.gz
+    
+    git clone https://github.com/jtbraun/Parse-RecDescent
+    cp -r Parse-RecDescent/lib/Parse/ .
 fi
 
 # Comment out some lines in negraplugin that change tokenization in the corpus

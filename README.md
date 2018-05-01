@@ -14,7 +14,9 @@ Dependencies:
 - `python3`
 - `java` (>= 1.8)
 - [`discodop`](https://github.com/andreasvc/disco-dop/)
-- [`treetools`](https://github.com/wmaier/treetools)
+- [`treetools`](https://github.com/wmaier/treetools) (install the version of
+  treetools for python2, since the version for python 3 seems to have a bug
+  for the transform option)
 
 Data required (and not included):
 
